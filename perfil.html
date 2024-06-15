@@ -33,17 +33,31 @@
             font-weight: bold;
         }
 
-        a.button {
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        a.button, form button {
             display: inline-block;
-            margin-top: 5px;
-            padding: 10px 20px;
+            width: 150px; 
             background-color: red;
             color: white;
             border-radius: 8px;
             text-decoration: none;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            height: 50px;
+            line-height: 50px; 
         }
 
-        a.button:hover {
+        form button {
+            margin-right: 35px;
+        }
+
+        a.button:hover, form button:hover {
             background-color: rgb(199, 10, 10);
         }
 
@@ -78,7 +92,12 @@
                 <span class="show-password" onclick="togglePassword()">👁️</span>
             </p>
         </div>
-        <a href="sairDaConta.php" class="button">Sair da conta</a>
+        <div class="button-container">
+            <a href="sairDaConta.php" class="button">Sair da conta</a>
+            <form method="POST" action="excluirConta.php">
+                <button type="submit" name="delete">Excluir Conta</button>
+            </form>
+        </div>
     </div>
 
     <script>
