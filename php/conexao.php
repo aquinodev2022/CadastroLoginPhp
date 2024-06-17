@@ -4,9 +4,10 @@ $user = "root";
 $pass = "";
 $bd = "projetoPhp";
 
-$conn = new mysqli($host, $user, $pass, $bd);
+$conexao = new mysqli($host, $user, $pass, $bd);
 
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
+if ($conexao->connect_error) {
+    echo "Conexão falhou: " . $conexao->connect_error;
+    exit();
 }
 ?>

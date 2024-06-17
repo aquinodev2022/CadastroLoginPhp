@@ -8,7 +8,8 @@ if (!isset($_SESSION['email'])) {
 
 $nome = $_SESSION['nome'];
 $email = $_SESSION['email'];
-$senha = $_SESSION['senha'];  // Recuperando a senha da sessão
+$senha = $_SESSION['senha'];
+$telefone = $_SESSION['telefone'];  
 
 include '../perfil.html';
 ?>

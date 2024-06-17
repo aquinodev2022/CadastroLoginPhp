@@ -1,25 +1,24 @@
-<?php
-session_start();
+<?php include 'conexao.php';
 
-include 'conexao.php';
+session_start();
 
 if (isset($_POST['delete'])) {
     $email = $_SESSION['email']; 
 
     $sql = "DELETE FROM usuarios WHERE email = ?";
-    $stmt = $conn->prepare($sql);
+    $stmt = $conexao->prepare($sql);
     $stmt->bind_param("s", $email);
 
     if ($stmt->execute()) {
         session_destroy();
-        header("Location: ../index.html"); // Redireciona para a página de login após excluir a conta
+        header("Location: ../index.html"); 
         exit();
     } else {
-        echo "Erro ao excluir conta: " . $conn->error;
+        echo "Erro ao excluir conta: " . $conexao->error;
     }
 
     $stmt->close();
 }
 
-$conn->close();
+$conexao->close();
 ?>

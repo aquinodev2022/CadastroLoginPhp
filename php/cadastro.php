@@ -4,23 +4,26 @@ include 'conexao.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];  // Armazenando a senha em texto claro (não recomendado)
+    $telefone = $_POST['telefone'];
+    $senha = $_POST['senha'];
 
-    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+    $stmt = $conexao->prepare("INSERT INTO usuarios (nome, email, telefone, senha) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $nome, $email, $telefone, $senha);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute() === TRUE) {
         session_start();
         $_SESSION['nome'] = $nome;
         $_SESSION['email'] = $email;
-        $_SESSION['senha'] = $senha;  // Armazenando a senha na sessão
+        $_SESSION['telefone'] = $telefone;
+        $_SESSION['senha'] = $senha;  // Adicione esta linha
 
-        // Redireciona para a página de perfil
         header('Location: perfil.php');
         exit();
     } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+        echo "Erro: " . $stmt->error;
     }
 
-    $conn->close();
+    $stmt->close();
+    $conexao->close();
 }
 ?>
