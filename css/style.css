@@ -35,6 +35,11 @@ h1 {
     padding: 0;
 }
 
+.logo {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
 ul.principal {
     margin: 36px 0 0 0;
     padding: 0;
@@ -107,6 +112,7 @@ ul.oculto li a {
 .blocoFig {
     width: 32%;
     margin: 50px 0;
+    text-align: center;
 }
 
 .blocoFig figure {
@@ -175,14 +181,6 @@ footer {
     margin-right: 0;
 }
 
-.divRodape:nth-child(odd) {
-    background: darkgreen;
-}
-
-.divRodape:nth-child(even) {
-    background: darkblue;
-}
-
 .divImagem {
     text-align: center;
 }
@@ -226,6 +224,10 @@ img.divImagem:last-child {
     margin-right: 0;
 }
 
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
 /*======== INTERNAS =========*/
 
 .interna {

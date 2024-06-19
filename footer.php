@@ -2,51 +2,47 @@
     <div class="container">
 
         <div class="divRodape divImagem">
-            <img src="img/ubec-logo.png">
-            <img src="img/ouvidoria.png">
-            <img src="img/QRcode.png">
+            <img src="asserts/transferir.jpeg" alt="PHP Logo">
+            <img src="asserts/QRcode.png" alt="QR Code">
         </div>
 
         <div class="divRodape">
-            <img class="imgBloco02" src="img/logo.svg">
-            <p class="pLink">Acesso rápido</p>
-            <p>Graduação</p>
-            <p>Bolsas e Financiamentos</p>
+            <p class="pLink">Quick Access</p>
+            <p><a href="#" class="footer-link">PHP Tutorials</a></p>
+            <p><a href="#" class="footer-link">PHP Frameworks</a></p>
             <p>
-                CPA – Comissão Própria<br>
-                de Avaliação
+            <a href="#" class="footer-link">Best Practices</a><br>
+            and Standards
             </p>
-            <p class="pLink">Ajuda</p>
-            <p class="pLink">Trabalhe Conosco</p>
+            <p class="pLink"><a href="#" class="footer-link">Support</a></p>
+            <p class="pLink"><a href="#" class="footer-link">Careers</a></p>
         </div>
 
         <div class="divRodape">
-            <p>Pós-Graduação</p>
-            <p>A Instituição</p>
-            <p>Área do Estudante</p>
-            <p>Documentos Institucionais</p>
-            <p class="pLink">Católica de A a Z</p>
+            <p><a href="#" class="footer-link">Advanced PHP</a></p>
+            <p><a href="#" class="footer-link">About Us</a></p>
+            <p><a href="#" class="footer-link">Developer Area</a></p>
+            <p><a href="#" class="footer-link">Documentation</a></p>
+            <p class="pLink"><a href="#" class="footer-link">PHP from A to Z</a></p>
         </div>
 
         <div class="divRodape">
-            <img class="divImagem" src="img/facebook.svg">
-            <img class="divImagem" src="img/linkedin.svg">
-            <img class="divImagem" src="img/instagram.svg">
-            <img class="divImagem" src="img/youtube.svg">
+            <a href="https://facebook.com" target="_blank"><img class="divImagem" src="asserts/facebook.svg" alt="Facebook"></a>
+            <a href="https://linkedin.com" target="_blank"><img class="divImagem" src="asserts/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank"><img class="divImagem" src="asserts/instagram.svg" alt="Instagram"></a>
+            <a href="https://youtube.com" target="_blank"><img class="divImagem" src="asserts/youtube.svg" alt="YouTube"></a>
 
             <p>
                 (81) 2127-0500<br>
-                faleconosco@ficr.edu.br
+                contact@phpsite.com
             </p>
             <p>
-                FICR - Faculdade Católica<br>
-                Imaculada Conceição<br>
-                do Recife
+                PHP Programming Site
             </p>
             <p>
-                Avenida Caxangá, 3841<br>
-                Iputinga - Recife / PE<br>
-                CEP: 50670-902
+                Avenida PHP, 1234<br>
+                Developer City, Code Land<br>
+                CEP: 12345-678
             </p>
 
         </div>

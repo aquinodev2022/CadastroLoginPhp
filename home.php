@@ -7,19 +7,19 @@ include "header.php";
     <section class="container">
         <div class="blocoFig">
             <figure>
-                <a href="#"><img src="asserts/transferir.jpeg" alt="Introdução ao PHP"></a>
+                <a href="#"><img src="asserts/IntroduçãoPHP.jpeg" alt="Introdução ao PHP"></a>
             </figure>
             <h2><a href="#">Introdução ao PHP</a></h2>
         </div>
         <div class="blocoFig">
             <figure>
-                <a href="#"><img src="asserts/Captura%20de%20ecrã%202024-06-19%20112838.png" alt="Frameworks PHP"></a>
+                <a href="#"><img src="asserts/FrameworksPHP.png" alt="Frameworks PHP"></a>
             </figure>
             <h2><a href="#">Frameworks PHP</a></h2>
         </div>
         <div class="blocoFig">
             <figure>
-                <a href="#"><img src="asserts/images.jpeg" alt="Comunidade PHP"></a>
+                <a href="#"><img src="asserts/ComunidadePHP.jpeg" alt="Comunidade PHP"></a>
             </figure>
             <h2><a href="#">Comunidade PHP</a></h2>
         </div>
