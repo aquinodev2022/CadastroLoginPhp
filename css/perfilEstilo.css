@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #24388B;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container-perfil {
+    max-width: 450px;
+    background-color: #e3dddd;
+    border-radius: 8px;
+}
+
+.IconeMostrarSenha {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input[readonly] {
+    background-color: #f0f0f0;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.btn-block {
+    padding: 10px 0;
+    font-size: 16px;
+}
