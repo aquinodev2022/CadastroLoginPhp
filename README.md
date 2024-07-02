@@ -15,6 +15,7 @@ Este é um projeto simples de cadastro e login de usuários desenvolvido em PHP.
 * Javascript
 * PhpMyAdmin, apache e mysql
 * Xampp
+* Bootstrap
 
 ## Contribuição 🤝 ##
 
